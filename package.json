@@ -1,0 +1,31 @@
+{
+    "name": "eleventy-statr-MALLS",
+    "version": "1.0.0",
+    "description": "** Eleventy Startr Powered Site **",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "cd src && npx @11ty/eleventy --serve --output=../dist",
+      "admin": "npx decap-server & cd web && npx @11ty/eleventy --serve --output=../dist",
+      "build": "cd src && npx @11ty/eleventy --output=../dist",
+      "buildfresh": "rm -rf dist && mkdir dist && cd src && npx @11ty/eleventy --output=../dist",
+      "srvweb": "cd src && python -m http.server 8000 && cd .."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@11ty/eleventy": "^2.0.1",
+      "@11ty/eleventy-img": "^3.1.1",
+      "@11ty/eleventy-navigation": "^0.3.5",
+      "@11ty/eleventy-plugin-bundle": "^1.0.4",
+      "@11ty/eleventy-plugin-rss": "^1.2.0",
+      "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+      "luxon": "^3.3.0",
+      "markdown-it-anchor": "^8.6.7"
+    },
+    "dependencies": {
+      "markdown-it-attrs": "^4.1.6"
+    }
+  }
+  
